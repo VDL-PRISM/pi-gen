@@ -15,7 +15,7 @@ Build instructions:
 
 #Dependencies
 
-`quilt kpartx realpath qemu-user-static debootstrap zerofree pxz zip`
+`quilt kpartx realpath qemu-user-static debootstrap zerofree pxz zip dosfstools`
 
 #Config
 
