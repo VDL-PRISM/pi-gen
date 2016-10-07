@@ -6,7 +6,7 @@ The Haspbian image is built with the same script that generates the official [Ra
 By default the Haspbian image is built on a Debian 8 droplet on Digital Ocean and takes about 30 minutes to build in the cheapest droplet. Dependencies and everything is handled by the build script with the exception of `git`.
 
 Build instructions:
-- Install git and other dependencies: `sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install git `
+- Install git and other dependencies: `sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get install git quilt qemu-user-static debootstrap kpartx zerofree pxz zip dosfstools`
 - Clone the `rpi_gen` code
 - Run the build script, with sudo or as root: `sudo ./build.sh`
 - Wait ~30 minutes for build to complete.
