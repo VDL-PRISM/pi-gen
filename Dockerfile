@@ -13,6 +13,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
   dosfstools && \
   rm -rf /var/lib/apt/lists/*
 
-COPY . /
+COPY . /image
 
-CMD /build.sh
+CMD cd /image && ./build.sh
