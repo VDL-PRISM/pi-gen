@@ -31,7 +31,7 @@ for STAGE_DIR in ${BASE_DIR}/stage*; do
 done
 
 # Build the base rootfs
-./build
+./build.sh
 
 # Copy rootfs from last stage
 array=($BASE_STAGES)

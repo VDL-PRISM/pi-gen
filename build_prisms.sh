@@ -28,7 +28,7 @@ mkdir ${WORK_DIR}/${last_stage}/rootfs
 rsync -aHAX ${BASE_DIR}/${OUTPUT_BASE_DIR}/rootfs ${WORK_DIR}/${last_stage}/rootfs
 
 # Build the PRISMS image
-./build
+./build.sh
 
 # Skip all stages except for the base ones
 for STAGE_DIR in ${BASE_DIR}/stage*; do
