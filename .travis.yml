@@ -1,5 +1,4 @@
 sudo: required
 language: bash
 script:
-  - ./build_base.sh
-  - ./build_prisms.sh
+  - sudo ./build_base.sh && sudo ./build_prisms.sh

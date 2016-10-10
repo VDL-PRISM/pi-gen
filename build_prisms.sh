@@ -42,7 +42,7 @@ for STAGE_DIR in ${BASE_DIR}/stage*; do
 done
 
 # Copy rootfs from export area
-mkdir ${LAST_STAGE_ROOTFS_DIR}
+mkdir -p ${LAST_STAGE_ROOTFS_DIR}
 rsync -aHAX ${EXPORT_ROOTFS_DIR} ${LAST_STAGE_ROOTFS_DIR}
 
 # Build the PRISMS image
