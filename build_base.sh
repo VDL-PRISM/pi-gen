@@ -29,7 +29,7 @@ export LAST_STAGE_ROOTFS_DIR="${WORK_DIR}/${LAST_STAGE}/rootfs"
 
 # Make sure all SKIPs have been removed
 for STAGE_DIR in ${BASE_DIR}/stage*; do
-    rm ${STAGE_DIR}/SKIP
+    rm -f ${STAGE_DIR}/SKIP
 done
 
 # Skip all stages except for the base ones
