@@ -1,4 +1,6 @@
 sudo: required
 language: bash
+install:
+  - sudo apt-get install quilt qemu-user-static debootstrap zerofree pxz dosfstools
 script:
   - sudo ./build_base.sh && sudo ./build_prisms.sh
